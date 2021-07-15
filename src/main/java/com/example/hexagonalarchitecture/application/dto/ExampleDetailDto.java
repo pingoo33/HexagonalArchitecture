@@ -1,6 +1,6 @@
 package com.example.hexagonalarchitecture.application.dto;
 
-import com.example.hexagonalarchitecture.domain.model.ExampleDomain;
+import com.example.hexagonalarchitecture.adapters.db.Example;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +15,7 @@ public class ExampleDetailDto {
         this.value = value;
     }
 
-    public static ExampleDetailDto of(ExampleDomain example) {
+    public static ExampleDetailDto from(Example example) {
         return new ExampleDetailDto(example.getId(), example.getValue());
     }
 }

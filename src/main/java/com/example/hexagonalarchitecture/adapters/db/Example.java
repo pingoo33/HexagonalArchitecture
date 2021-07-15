@@ -1,4 +1,4 @@
-package com.example.hexagonalarchitecture.infra;
+package com.example.hexagonalarchitecture.adapters.db;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

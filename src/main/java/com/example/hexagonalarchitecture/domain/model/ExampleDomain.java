@@ -1,6 +1,5 @@
 package com.example.hexagonalarchitecture.domain.model;
 
-import com.example.hexagonalarchitecture.infra.Example;
 import lombok.Getter;
 
 @Getter
@@ -17,15 +16,12 @@ public class ExampleDomain {
         this.value = value;
     }
 
-    public static ExampleDomain of(Example example) {
-        return new ExampleDomain(example.getId(), example.getValue());
-    }
-
-    public static ExampleDomain of(Integer value) {
-        return new ExampleDomain(value);
-    }
-
-    public void modify(Integer value) {
-        this.value = value;
+    public static ExampleDomain of(
+            String id,
+            Integer value
+    ) {
+        return new ExampleDomain(
+                id,
+                value);
     }
 }

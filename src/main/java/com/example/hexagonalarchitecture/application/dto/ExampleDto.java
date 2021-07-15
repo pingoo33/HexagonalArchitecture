@@ -11,12 +11,4 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ExampleDto {
     private Integer value;
-
-    private ExampleDto(Integer value) {
-        this.value = value;
-    }
-
-    public static ExampleDto of(ExampleDomain example) {
-        return new ExampleDto(example.getValue());
-    }
 }

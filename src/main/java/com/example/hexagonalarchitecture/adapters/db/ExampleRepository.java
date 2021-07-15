@@ -1,4 +1,4 @@
-package com.example.hexagonalarchitecture.infra;
+package com.example.hexagonalarchitecture.adapters.db;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
