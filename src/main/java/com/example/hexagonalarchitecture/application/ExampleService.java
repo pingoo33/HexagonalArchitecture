@@ -14,7 +14,7 @@ public class ExampleService {
     }
 
     public ExampleDetailDto findById(String id) {
-        return this.examplePort.findById(id);
+        return this.examplePort.findById(id).orElseThrow();
     }
 
     public ExampleDetailDto save(ExampleDto example) {
